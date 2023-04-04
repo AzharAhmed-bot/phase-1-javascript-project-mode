@@ -1,21 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marvel Project</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="head">
-</html>
-<a class="marvel-logo" href="https://1000logos.net/wp-content/uploads/2021/06/Marvel-Comics-logo.png" alt=""></a>
-
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="character()">
+    <div id="nav">
+      <img
+        class="marvel-logo"
+        src="https://1000logos.net/wp-content/uploads/2021/06/Marvel-Comics-logo.png"
+        alt="marvel-logo"
+      />
+      <h4 class="characters">
+        <a href="index.html"><h3>Characters</h3></a>
+      </h4>
+      <h4 class="comics">
+        <a href="index.html"><h3>Comics</h3></a>
+      </h4>
+      <h4 class="favourites">
+        <a href="favourite.html"><h3>favourites</h3></a>
+      </h4>
     </div>
-
-
-</body>
-<script src="script.js"></script>
+    <hr style="color: red; margin: 0; height: 3px" />
+    <div id="container">
+      <h1 class="header-main-title">Marvel Comics Characters Search</h1>
+      <form id="connectionForm">
+        <div id="form-group">
+          <input
+            id="form-groups"
+            type="text"
+            placeholder="Eg.Hulk,Iron Man,Spider-Man,etc..."
+            onkeyup="showCorrespondingHeros()"
+          />
+        </div>
+        <div class="submit-group">
+          <input
+            id="submit-groups"
+            type="submit"
+            value="Search!"
+            class="btn btn-danger mb-2 float-right search-character-button"
+            id="submit"
+          />
+        </div>
+      </form>
+    </div>
+    <hr style="color: red; margin: 0; height: 3px" />
+  </body>
+  <script src="script.js"></script>
 </html>
