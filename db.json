@@ -1,84 +1,114 @@
 {
     "comics": [
-    {
-    "title": "Spider-Man: No Way Home",
-    "image": "https://www.marvel.com/comics/issue/89013/spider-man_no_way_home_2021_1/cover",
-    "superhero": "Spider-Man",
-    "description": "Spidey is pulled to a dimension where he never became Spider-Man.",
-    "price": "$4.99",
-    "comment": []
-    },
-    {
-    "title": "The Mighty Thor",
-    "image": "https://www.marvel.com/comics/issue/89595/thor_2020_1/cover",
-    "superhero": "Thor",
-    "description": "The God of Thunder clashes with Galactus!",
-    "price": "$3.99",
-    "comment": []
-    },
-    {
-    "title": "Black Panther",
-    "image": "https://www.marvel.com/comics/issue/69991/black_panther_2018_1/cover",
-    "superhero": "Black Panther",
-    "description": "T'Challa faces a deadly foe who seeks to overthrow the kingdom of Wakanda.",
-    "price": "$3.99",
-    "comment": []
-    },
-    {
-    "title": "Captain America",
-    "image": "https://www.marvel.com/comics/issue/70737/captain_america_2018_1/cover",
-    "superhero": "Captain America",
-    "description": "Cap goes on a mission to stop a dangerous new threat to America.",
-    "price": "$4.99",
-    "comment": []
-    },
-    {
-    "title": "Iron Man",
-    "image": "https://www.marvel.com/comics/issue/60760/invincible_iron_man_2016_1/cover",
-    "superhero": "Iron Man",
-    "description": "Tony Stark faces his deadliest enemy yet, the Mandarin!",
-    "price": "$3.99",
-    "comment": []
-    },
-    {
-    "title": "Doctor Strange",
-    "image": "https://www.marvel.com/comics/issue/61049/doctor_strange_2015_1/cover",
-    "superhero": "Doctor Strange",
-    "description": "The Sorcerer Supreme must stop a powerful new mystical threat!",
-    "price": "$4.99",
-    "comment": []
-    },
-    {
-    "title": "The Avengers",
-    "image": "https://www.marvel.com/comics/issue/80316/avengers_2020_1/cover",
-    "superhero": "The Avengers",
-    "description": "The Earth's Mightiest Heroes assemble for a new adventure!",
-    "price": "$5.99",
-    "comment": []
-    },
-    {
-    "title": "The Incredible Hulk",
-    "image": "https://www.marvel.com/comics/issue/27658/the_incredible_hulk_2009_600/cover",
-    "superhero": "The Incredible Hulk",
-    "description": "Hulk must face his greatest enemy yet, The Leader!",
-    "price": "$6.99",
-    "comment": []
-    },
-    {
-    "title": "Wolverine",
-    "image": "https://www.marvel.com/comics/issue/77067/wolverine_2020_1/cover",
-    "superhero": "Wolverine",
-    "description": "Logan goes on a journey to find his past, encountering old allies and new enemies!",
-    "price": "$4.99",
-    "comment": []
-    },
-    {
-    "title": "Daredevil",
-    "image": "https://www.marvel.com/comics/issue/65140/daredevil_2015_1/cover",
-    "superhero": "Daredevil",
-    "description": "Matt Murdock returns to New York City to take on a dangerous new crime syndicate.",
-    "price": "$3.99",
-    "comment": []
-    }
+      {
+        "id": 1,
+        "title": "The Amazing Spider-Man #55",
+        "image": "https://cdn.marvel.com/u/prod/marvel/i/mg/7/30/6259cb878dd80/clean.jpg",
+        "superhero": "Spider-Man",
+        "description": "Spidey's life gets even more complicated as he deals with J. Jonah Jameson's new podcast, a new Sinister Six, and the return of an old foe!",
+        "price": 3.99,
+        "comments": []
+      },
+      {
+        "id": 2,
+        "title": "X-Men #17",
+        "image": "https://www.syfy.com/sites/syfy/files/styles/blog-post-embedded--tablet-1_5x/public/2022/03/xmen92_cover.jpg",
+        "superhero": "X-Men",
+        "description": "The X-Men take on the Brood and their new queen, but at what cost?",
+        "price": 4.99,
+        "comments": []
+      },
+      {
+        "id": 3,
+        "title": "Black Panther #25",
+        "image": "https://cdn.marvel.com/u/prod/marvel/i/mg/9/50/5c3fa04e953e3/clean.jpg",
+        "superhero": "Black Panther",
+        "description": "The epic conclusion to Ta-Nehisi Coates' run on Black Panther!",
+        "price": 5.99,
+        "comments": []
+      },
+      {
+        "id": 4,
+        "title": "The Mighty Thor #705",
+        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/1/17/Thor_by_Olivier_Coipel.png/220px-Thor_by_Olivier_Coipel.png",
+        "superhero": "Thor",
+        "description": "The final battle between Thor and the Mangog!",
+        "price": 3.99,
+        "comments": []
+      },
+      {
+        "id": 5,
+        "title": "Captain America #695",
+        "image": "https://assets2.ignimgs.com/2014/04/02/cpnamercia0402141280jpg-e32158_160w.jpg?width=1280",
+        "superhero": "Captain America",
+        "description": "Cap faces a new enemy who seeks to rewrite history!",
+        "price": 3.99,
+        "comments": []
+      },
+      {
+        "id": 6,
+        "title": "Iron Man #3",
+        "image": "https://thewaltdisneycompany.com/app/uploads/2015/11/Marvel-Cover-2014_0.jpg",
+        "superhero": "Iron Man",
+        "description": "Tony Stark's new armor is put to the test against a dangerous new foe!",
+        "price": 4.99,
+        "comments": []
+      },
+      {
+        "id": 7,
+        "title": "The Uncanny Avengers #1",
+        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/Uncanny_avg_v3_01.jpg/300px-Uncanny_avg_v3_01.jpg",
+        "superhero": "Avengers",
+        "description": "A new team of Avengers is formed to take on a deadly threat!",
+        "price": 3.99,
+        "comments": []
+      },
+      {
+        "id": 8,
+        "title": "Incredible Hulk #181",
+        "image": "https://cdn.marvel.com/u/prod/marvel/i/mg/8/04/5ced997c7ccd9/clean.jpg",
+        "superhero": "Hulk",
+        "description": "The first appearance of Wolverine as he goes up against the Incredible Hulk!",
+        "price": 8.99,
+        "comments": []
+      },
+      {
+        "id": 9,
+        "title": "Action Comics #1",
+        "image": "https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:376/h:578/q:75/https://bleedingcool.com/wp-content/uploads/2018/07/Superman-1-Cover.jpg",
+        "superhero": "Superman",
+        "description": "The first appearance of Superman as he takes on corrupt politicians and criminals in Metropolis!",
+        "price": 5.99,
+        "comments": []
+      },
+      {
+        "id": 10,
+        "title": "Batman: The Killing Joke",
+        "image": "https://cdn.vox-cdn.com/thumbor/PiETSrnsqG2RWtNuZmSRf6ku2Po=/0x382:900x1057/1200x800/filters:focal(0x382:900x1057)/cdn.vox-cdn.com/uploads/chorus_image/image/45934266/BG-Cv41-Joker-variant-solicitation-88c4e-31e8d.0.0.jpg",
+        "superhero": "Batman",
+        "description": "The Joker tries to prove that anyone can be driven insane like he was, with Batman and Commissioner Gordon caught in the crossfire!",
+        "price": 10,
+        "comments": []
+      },
+      {
+        "id": 11,
+        "title": "Deadpool: Merc with a Mouth",
+        "image": "https://cdn.marvel.com/u/prod/marvel/i/mg/e/80/5a0db3afe25e0/background.jpg",
+        "superheroName": "Deadpool",
+        "description": "Deadpool travels to different dimensions to collect the pieces of a powerful weapon, but he's not the only one after it.",
+        "price": 14.99,
+        "comments": []
+      },
+      {
+        "id": 12,
+        "title": "Ghost Rider: Road to Damnation",
+        "image": "https://static.wikia.nocookie.net/marveldatabase/images/8/83/Ghost_Rider_Vol_5_3.jpg/revision/latest/scale-to-width-down/250?cb=20191206032941",
+        "superheroName": "Ghost Rider",
+        "description": "Johnny Blaze (aka Ghost Rider) makes a deal with the devil to save his mentor's soul, but he must pay the price by collecting escaped demons.",
+        "price": 12.99,
+        "comments": []
+      }
     ]
-    }
+  }
+    
+  

@@ -7,7 +7,7 @@
     <title>Marvel Project</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body onload="character()">
+  <body>
     <div id="nav">
       <img
         class="marvel-logo"
@@ -25,30 +25,28 @@
       </h4>
     </div>
     <hr style="color: red; margin: 0; height: 3px" />
+
+    <div id="comics-container"></div>
+
     <div id="container">
-      <h1 class="header-main-title">Marvel Comics Characters Search</h1>
+      <h1 class="header-main-title">
+        Search Your favourite Marvel Comic Books
+      </h1>
       <form id="connectionForm">
         <div id="form-group">
           <input
             id="form-groups"
             type="text"
-            placeholder="Eg.Hulk,Iron Man,Spider-Man,etc..."
-            onkeyup="showCorrespondingHeros()"
+            placeholder="Enter your favourite Comic Book"
           />
         </div>
         <div class="submit-group">
-          <input
-            id="submit-groups"
-            type="submit"
-            value="Search!"
-            class="btn btn-danger mb-2 float-right search-character-button"
-            id="submit"
-          />
+          <input id="submit-groups" type="submit" value="Search!" />
         </div>
       </form>
     </div>
     <hr style="color: red; margin: 0; height: 3px" />
+    <div id="display-submit"></div>
   </body>
   <script src="script.js"></script>
-  <script src="favourite.js"></script>
 </html>
