@@ -1,0 +1,84 @@
+{
+    "comics": [
+    {
+    "title": "Spider-Man: No Way Home",
+    "image": "https://www.marvel.com/comics/issue/89013/spider-man_no_way_home_2021_1/cover",
+    "superhero": "Spider-Man",
+    "description": "Spidey is pulled to a dimension where he never became Spider-Man.",
+    "price": "$4.99",
+    "comment": []
+    },
+    {
+    "title": "The Mighty Thor",
+    "image": "https://www.marvel.com/comics/issue/89595/thor_2020_1/cover",
+    "superhero": "Thor",
+    "description": "The God of Thunder clashes with Galactus!",
+    "price": "$3.99",
+    "comment": []
+    },
+    {
+    "title": "Black Panther",
+    "image": "https://www.marvel.com/comics/issue/69991/black_panther_2018_1/cover",
+    "superhero": "Black Panther",
+    "description": "T'Challa faces a deadly foe who seeks to overthrow the kingdom of Wakanda.",
+    "price": "$3.99",
+    "comment": []
+    },
+    {
+    "title": "Captain America",
+    "image": "https://www.marvel.com/comics/issue/70737/captain_america_2018_1/cover",
+    "superhero": "Captain America",
+    "description": "Cap goes on a mission to stop a dangerous new threat to America.",
+    "price": "$4.99",
+    "comment": []
+    },
+    {
+    "title": "Iron Man",
+    "image": "https://www.marvel.com/comics/issue/60760/invincible_iron_man_2016_1/cover",
+    "superhero": "Iron Man",
+    "description": "Tony Stark faces his deadliest enemy yet, the Mandarin!",
+    "price": "$3.99",
+    "comment": []
+    },
+    {
+    "title": "Doctor Strange",
+    "image": "https://www.marvel.com/comics/issue/61049/doctor_strange_2015_1/cover",
+    "superhero": "Doctor Strange",
+    "description": "The Sorcerer Supreme must stop a powerful new mystical threat!",
+    "price": "$4.99",
+    "comment": []
+    },
+    {
+    "title": "The Avengers",
+    "image": "https://www.marvel.com/comics/issue/80316/avengers_2020_1/cover",
+    "superhero": "The Avengers",
+    "description": "The Earth's Mightiest Heroes assemble for a new adventure!",
+    "price": "$5.99",
+    "comment": []
+    },
+    {
+    "title": "The Incredible Hulk",
+    "image": "https://www.marvel.com/comics/issue/27658/the_incredible_hulk_2009_600/cover",
+    "superhero": "The Incredible Hulk",
+    "description": "Hulk must face his greatest enemy yet, The Leader!",
+    "price": "$6.99",
+    "comment": []
+    },
+    {
+    "title": "Wolverine",
+    "image": "https://www.marvel.com/comics/issue/77067/wolverine_2020_1/cover",
+    "superhero": "Wolverine",
+    "description": "Logan goes on a journey to find his past, encountering old allies and new enemies!",
+    "price": "$4.99",
+    "comment": []
+    },
+    {
+    "title": "Daredevil",
+    "image": "https://www.marvel.com/comics/issue/65140/daredevil_2015_1/cover",
+    "superhero": "Daredevil",
+    "description": "Matt Murdock returns to New York City to take on a dangerous new crime syndicate.",
+    "price": "$3.99",
+    "comment": []
+    }
+    ]
+    }
