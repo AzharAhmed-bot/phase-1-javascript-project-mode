@@ -11,7 +11,7 @@
       },
       {
         "id": 2,
-        "title": "X-Men #17",
+        "title": "X-Men ",
         "image": "https://www.syfy.com/sites/syfy/files/styles/blog-post-embedded--tablet-1_5x/public/2022/03/xmen92_cover.jpg",
         "superhero": "X-Men",
         "description": "The X-Men take on the Brood and their new queen, but at what cost?",
@@ -20,7 +20,7 @@
       },
       {
         "id": 3,
-        "title": "Black Panther #25",
+        "title": "Black Panther",
         "image": "https://cdn.marvel.com/u/prod/marvel/i/mg/9/50/5c3fa04e953e3/clean.jpg",
         "superhero": "Black Panther",
         "description": "The epic conclusion to Ta-Nehisi Coates' run on Black Panther!",
@@ -29,7 +29,7 @@
       },
       {
         "id": 4,
-        "title": "The Mighty Thor #705",
+        "title": "The Mighty Thor ",
         "image": "https://upload.wikimedia.org/wikipedia/en/thumb/1/17/Thor_by_Olivier_Coipel.png/220px-Thor_by_Olivier_Coipel.png",
         "superhero": "Thor",
         "description": "The final battle between Thor and the Mangog!",
@@ -38,7 +38,7 @@
       },
       {
         "id": 5,
-        "title": "Captain America #695",
+        "title": "Captain America",
         "image": "https://assets2.ignimgs.com/2014/04/02/cpnamercia0402141280jpg-e32158_160w.jpg?width=1280",
         "superhero": "Captain America",
         "description": "Cap faces a new enemy who seeks to rewrite history!",
@@ -47,7 +47,7 @@
       },
       {
         "id": 6,
-        "title": "Iron Man #3",
+        "title": "Iron Man",
         "image": "https://thewaltdisneycompany.com/app/uploads/2015/11/Marvel-Cover-2014_0.jpg",
         "superhero": "Iron Man",
         "description": "Tony Stark's new armor is put to the test against a dangerous new foe!",
@@ -56,7 +56,7 @@
       },
       {
         "id": 7,
-        "title": "The Uncanny Avengers #1",
+        "title": "The Uncanny Avengers ",
         "image": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/Uncanny_avg_v3_01.jpg/300px-Uncanny_avg_v3_01.jpg",
         "superhero": "Avengers",
         "description": "A new team of Avengers is formed to take on a deadly threat!",
@@ -65,7 +65,7 @@
       },
       {
         "id": 8,
-        "title": "Incredible Hulk #181",
+        "title": "Incredible Hulk ",
         "image": "https://cdn.marvel.com/u/prod/marvel/i/mg/8/04/5ced997c7ccd9/clean.jpg",
         "superhero": "Hulk",
         "description": "The first appearance of Wolverine as he goes up against the Incredible Hulk!",
@@ -74,7 +74,7 @@
       },
       {
         "id": 9,
-        "title": "Action Comics #1",
+        "title": "Action Comics ",
         "image": "https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:376/h:578/q:75/https://bleedingcool.com/wp-content/uploads/2018/07/Superman-1-Cover.jpg",
         "superhero": "Superman",
         "description": "The first appearance of Superman as he takes on corrupt politicians and criminals in Metropolis!",
