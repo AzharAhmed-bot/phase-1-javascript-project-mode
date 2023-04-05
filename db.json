@@ -1,114 +1,124 @@
 {
-    "comics": [
-      {
-        "id": 1,
-        "title": "The Amazing Spider-Man #55",
-        "image": "https://cdn.marvel.com/u/prod/marvel/i/mg/7/30/6259cb878dd80/clean.jpg",
-        "superhero": "Spider-Man",
-        "description": "Spidey's life gets even more complicated as he deals with J. Jonah Jameson's new podcast, a new Sinister Six, and the return of an old foe!",
-        "price": 3.99,
-        "comments": []
-      },
-      {
-        "id": 2,
-        "title": "X-Men ",
-        "image": "https://www.syfy.com/sites/syfy/files/styles/blog-post-embedded--tablet-1_5x/public/2022/03/xmen92_cover.jpg",
-        "superhero": "X-Men",
-        "description": "The X-Men take on the Brood and their new queen, but at what cost?",
-        "price": 4.99,
-        "comments": []
-      },
-      {
-        "id": 3,
-        "title": "Black Panther",
-        "image": "https://cdn.marvel.com/u/prod/marvel/i/mg/9/50/5c3fa04e953e3/clean.jpg",
-        "superhero": "Black Panther",
-        "description": "The epic conclusion to Ta-Nehisi Coates' run on Black Panther!",
-        "price": 5.99,
-        "comments": []
-      },
-      {
-        "id": 4,
-        "title": "The Mighty Thor ",
-        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/1/17/Thor_by_Olivier_Coipel.png/220px-Thor_by_Olivier_Coipel.png",
-        "superhero": "Thor",
-        "description": "The final battle between Thor and the Mangog!",
-        "price": 3.99,
-        "comments": []
-      },
-      {
-        "id": 5,
-        "title": "Captain America",
-        "image": "https://assets2.ignimgs.com/2014/04/02/cpnamercia0402141280jpg-e32158_160w.jpg?width=1280",
-        "superhero": "Captain America",
-        "description": "Cap faces a new enemy who seeks to rewrite history!",
-        "price": 3.99,
-        "comments": []
-      },
-      {
-        "id": 6,
-        "title": "Iron Man",
-        "image": "https://thewaltdisneycompany.com/app/uploads/2015/11/Marvel-Cover-2014_0.jpg",
-        "superhero": "Iron Man",
-        "description": "Tony Stark's new armor is put to the test against a dangerous new foe!",
-        "price": 4.99,
-        "comments": []
-      },
-      {
-        "id": 7,
-        "title": "The Uncanny Avengers ",
-        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/Uncanny_avg_v3_01.jpg/300px-Uncanny_avg_v3_01.jpg",
-        "superhero": "Avengers",
-        "description": "A new team of Avengers is formed to take on a deadly threat!",
-        "price": 3.99,
-        "comments": []
-      },
-      {
-        "id": 8,
-        "title": "Incredible Hulk ",
-        "image": "https://cdn.marvel.com/u/prod/marvel/i/mg/8/04/5ced997c7ccd9/clean.jpg",
-        "superhero": "Hulk",
-        "description": "The first appearance of Wolverine as he goes up against the Incredible Hulk!",
-        "price": 8.99,
-        "comments": []
-      },
-      {
-        "id": 9,
-        "title": "Action Comics ",
-        "image": "https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:376/h:578/q:75/https://bleedingcool.com/wp-content/uploads/2018/07/Superman-1-Cover.jpg",
-        "superhero": "Superman",
-        "description": "The first appearance of Superman as he takes on corrupt politicians and criminals in Metropolis!",
-        "price": 5.99,
-        "comments": []
-      },
-      {
-        "id": 10,
-        "title": "Batman: The Killing Joke",
-        "image": "https://cdn.vox-cdn.com/thumbor/PiETSrnsqG2RWtNuZmSRf6ku2Po=/0x382:900x1057/1200x800/filters:focal(0x382:900x1057)/cdn.vox-cdn.com/uploads/chorus_image/image/45934266/BG-Cv41-Joker-variant-solicitation-88c4e-31e8d.0.0.jpg",
-        "superhero": "Batman",
-        "description": "The Joker tries to prove that anyone can be driven insane like he was, with Batman and Commissioner Gordon caught in the crossfire!",
-        "price": 10,
-        "comments": []
-      },
-      {
-        "id": 11,
-        "title": "Deadpool: Merc with a Mouth",
-        "image": "https://cdn.marvel.com/u/prod/marvel/i/mg/e/80/5a0db3afe25e0/background.jpg",
-        "superheroName": "Deadpool",
-        "description": "Deadpool travels to different dimensions to collect the pieces of a powerful weapon, but he's not the only one after it.",
-        "price": 14.99,
-        "comments": []
-      },
-      {
-        "id": 12,
-        "title": "Ghost Rider: Road to Damnation",
-        "image": "https://static.wikia.nocookie.net/marveldatabase/images/8/83/Ghost_Rider_Vol_5_3.jpg/revision/latest/scale-to-width-down/250?cb=20191206032941",
-        "superheroName": "Ghost Rider",
-        "description": "Johnny Blaze (aka Ghost Rider) makes a deal with the devil to save his mentor's soul, but he must pay the price by collecting escaped demons.",
-        "price": 12.99,
-        "comments": []
-      }
-    ]
-  }
-    
-  
+  "comics": [
+    {
+      "id": 1,
+      "title": "The Amazing Spider-Man",
+      "image": "https://cdn.marvel.com/u/prod/marvel/i/mg/7/30/6259cb878dd80/clean.jpg",
+      "superhero": "Spider-Man",
+      "description": "Spidey's life gets even more complicated as he deals with J. Jonah Jameson's new podcast, a new Sinister Six, and the return of an old foe!",
+      "price": 3.99,
+      "available": 12,
+      "comments": []
+    },
+    {
+      "id": 2,
+      "title": "X-Men",
+      "image": "https://www.syfy.com/sites/syfy/files/styles/blog-post-embedded--tablet-1_5x/public/2022/03/xmen92_cover.jpg",
+      "superhero": "X-Men",
+      "description": "The X-Men take on the Brood and their new queen, but at what cost?",
+      "price": 4.99,
+      "available": 10,
+      "comments": ""
+    },
+    {
+      "id": 3,
+      "title": "Black Panther",
+      "image": "https://cdn.marvel.com/u/prod/marvel/i/mg/9/50/5c3fa04e953e3/clean.jpg",
+      "superhero": "Black Panther",
+      "description": "The epic conclusion to Ta-Nehisi Coates' run on Black Panther!",
+      "price": 5.99,
+      "available": 8,
+      "comments": "Awesome Comic Book"
+    },
+    {
+      "id": 4,
+      "title": "The Mighty Thor ",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/1/17/Thor_by_Olivier_Coipel.png/220px-Thor_by_Olivier_Coipel.png",
+      "superhero": "Thor",
+      "description": "The final battle between Thor and the Mangog!",
+      "price": 3.99,
+      "available": 7,
+      "comments": []
+    },
+    {
+      "id": 5,
+      "title": "Captain America",
+      "image": "https://assets2.ignimgs.com/2014/04/02/cpnamercia0402141280jpg-e32158_160w.jpg?width=1280",
+      "superhero": "Captain America",
+      "description": "Cap faces a new enemy who seeks to rewrite history!",
+      "price": 3.99,
+      "available": 5,
+      "comments": "Awesome Comic Book"
+    },
+    {
+      "id": 6,
+      "title": "Iron Man",
+      "image": "https://thewaltdisneycompany.com/app/uploads/2015/11/Marvel-Cover-2014_0.jpg",
+      "superhero": "Iron Man",
+      "description": "Tony Stark's new armor is put to the test against a dangerous new foe!",
+      "price": 4.99,
+      "available": 2,
+      "comments": []
+    },
+    {
+      "id": 7,
+      "title": "The Uncanny Avengers ",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/Uncanny_avg_v3_01.jpg/300px-Uncanny_avg_v3_01.jpg",
+      "superhero": "Avengers",
+      "description": "A new team of Avengers is formed to take on a deadly threat!",
+      "price": 3.99,
+      "available": 16,
+      "comments": []
+    },
+    {
+      "id": 8,
+      "title": "Incredible Hulk ",
+      "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4c901a99-95c4-47b2-9237-29875dc4f064/d4qdsxz-6f7f68e2-cc73-4b9a-9402-995fab7d128f.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRjOTAxYTk5LTk1YzQtNDdiMi05MjM3LTI5ODc1ZGM0ZjA2NFwvZDRxZHN4ei02ZjdmNjhlMi1jYzczLTRiOWEtOTQwMi05OTVmYWI3ZDEyOGYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.wJ3BwVzn7Q---4C1GoEUn6yxoF8Ja2UkXibue_O3ZFA",
+      "superhero": "Hulk",
+      "description": "The first appearance of Wolverine as he goes up against the Incredible Hulk!",
+      "price": 8.99,
+      "available": 10,
+      "comments": []
+    },
+    {
+      "id": 9,
+      "title": "Action Comics ",
+      "image": "https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:376/h:578/q:75/https://bleedingcool.com/wp-content/uploads/2018/07/Superman-1-Cover.jpg",
+      "superhero": "Superman",
+      "description": "The first appearance of Superman as he takes on corrupt politicians and criminals in Metropolis!",
+      "price": 5.99,
+      "available": 20,
+      "comments": []
+    },
+    {
+      "id": 10,
+      "title": "Batman: The Killing Joke",
+      "image": "https://cdn.vox-cdn.com/thumbor/PiETSrnsqG2RWtNuZmSRf6ku2Po=/0x382:900x1057/1200x800/filters:focal(0x382:900x1057)/cdn.vox-cdn.com/uploads/chorus_image/image/45934266/BG-Cv41-Joker-variant-solicitation-88c4e-31e8d.0.0.jpg",
+      "superhero": "Batman",
+      "description": "The Joker tries to prove that anyone can be driven insane like he was, with Batman and Commissioner Gordon caught in the crossfire!",
+      "price": 10,
+      "available": 23,
+      "comments": []
+    },
+    {
+      "id": 11,
+      "title": "Deadpool: Merc with a Mouth",
+      "image": "https://cdn.marvel.com/u/prod/marvel/i/mg/e/80/5a0db3afe25e0/background.jpg",
+      "superhero": "Deadpool",
+      "description": "Deadpool travels to different dimensions to collect the pieces of a powerful weapon, but he's not the only one after it.",
+      "price": 14.99,
+      "available": 14,
+      "comments": []
+    },
+    {
+      "id": 12,
+      "title": "Ghost Rider: Road to Damnation",
+      "image": "https://static.wikia.nocookie.net/marveldatabase/images/8/83/Ghost_Rider_Vol_5_3.jpg/revision/latest/scale-to-width-down/250?cb=20191206032941",
+      "superhero": "Ghost Rider",
+      "description": "Johnny Blaze (aka Ghost Rider) makes a deal with the devil to save his mentor's soul, but he must pay the price by collecting escaped demons.",
+      "price": 12.99,
+      "available": 11,
+      "comments": []
+    }
+  ]
+}
