@@ -27,7 +27,7 @@
       "superhero": "Black Panther",
       "description": "The epic conclusion to Ta-Nehisi Coates' run on Black Panther!",
       "price": 5.99,
-      "available": 8,
+      "available": 7,
       "comments": "Awesome Comic Book"
     },
     {
@@ -47,7 +47,7 @@
       "superhero": "Captain America",
       "description": "Cap faces a new enemy who seeks to rewrite history!",
       "price": 3.99,
-      "available": 12,
+      "available": 11,
       "comments": "I love it"
     },
     {

@@ -115,7 +115,9 @@ fetch('http://localhost:3000/comics')
               body:JSON.stringify({comments:result})
             })
             .then(resp=> resp.json())
-            .then(data=>console.log(data));
+            .then(data=>{
+              alert("Feed back succcesfully received!")
+              console.log(data)});
             gettingComments.reset()
           })
          //--------------------------------------------------------------------------------------------------------------------------//   

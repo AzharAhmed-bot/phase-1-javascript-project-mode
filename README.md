@@ -1,172 +1,49 @@
-# Phase 1 Project Guidelines
+# Author: [AZHAR AHMED]
 
-## Learning Goals
+# TITLE: Comic Book Store Web Application
 
-- Design and architect features across a frontend
-- Communicate and collaborate in a technical environment
-- Integrate JavaScript and an external API
-- Debug issues in small- to medium-sized projects
-- Build and iterate on a project MVP
+This is a front-end web application intended to display and sell comic books. It uses JavaScript to fetch and display data from a local server running on http://localhost:3000/comics.
 
-## Introduction
+# Features or Description
 
-Welcome to JavaScript Project Mode!
+Displays all available comics from the server in styled card elements.
+Allows users to search for a specific comic by title.
+If a comic title is found, displays detailed information about the selected comic including its image, description, price, availability status and an option to leave feedback.
+Users can leave feedback/comments by submitting a form with their comment.
+Users can purchase a comic by clicking on the "Buy Now" button. If the selected comic has an available stock, the available stock is decremented by one and the result is displayed on the page. If the available stock reaches zero, the comic is removed from the store.
+If a user tries to buy a book that is out of stock, they receive an alert message.
 
-You’ve worked so hard to get here and have learned a ton. Now it's time to bring
-it all together!
+# Technologies Used
 
-For this project, you're going build a Single Page Application (**SPA**).
-Building this application will be challenging because it will integrate
-everything you've learned up to this point. Your frontend will be built with
-HTML, CSS, and JavaScript and will communicate with a public API.
+1)HTML
+2)CSS
+3)JavaScript
 
-### Project Requirements
+# How to Use
 
-1. Your app must be a HTML/CSS/JS frontend that accesses data from a public API.
-   All interactions between the client and the API should be handled
-   asynchronously and use JSON as the communication format.
+1)Clone or download the code repository.
+2)In the terminal, navigate to the project directory and run code.
+3)Run the command json-server --watch db.json to start the server.
+4)Open the index.html file in your web browser to start using the application.
 
-2. Your entire app must run on a single page. There should be NO redirects. In
-   other words, your project will contain a single HTML file.
+# Project Setup Instructions
 
-3. Your app needs to incorporate at least 3 separate event listeners
-   (DOMContentLoaded, click, change, submit, etc).
+Clone the project repository to your local machine.
+Open the project folder on your code editor of choice.
+Run npm install to install dependencies.
+Run npm start to start the application.
+Open http://localhost:3000 on your web browser to view the application.
 
-4. Some interactivity is required. This could be as simple as adding a "like"
-   button or adding comments. These interactions do not need to persist after
-   reloading the page.
+# Link to Live Site on GitHub Pages
 
-5. Follow good coding practices. Keep your code DRY (Do not repeat yourself) by
-   utilizing functions to abstract repetitive code.
+https://github.com/AzharAhmed-bot/phase-1-javascript-project-mode
 
-### Stretch Goals
+# Credits
 
-1. Use [json-server][] in your project to persist your app's interactivity.
+This project was created as a part of the Moringa Full-stack Engineer Course. All the codes were written by creator with the help of my Technical mentor Steve Otieno
 
-## Strategy, Timeline, and Tips
+Creator: AZHAR AHMED
 
-### Planning
+# Copyright and License Information
 
-- Plan out your features
-- Develop user stories
-  - “As [ a user ], I want [ to perform this action ] so that
-    [ I can accomplish this goal ].”
-  - Features should not need you there to explain them to users
-- Plan out the structure of your JSON requests
-
-### Project Pitches
-
-Before you start working on your project, you'll pitch your project idea to your
-instructors for approval and feedback.
-
-For your project pitch, you should include:
-
-- The basic story of your application
-- The core features of your MVP
-- The API data you'll be using and how you'll use it
-- Challenges you expect to face
-- How you are meeting the requirements of the project
-
-Feel free to send this pitch to your instructor via slack asynchronously.
-
-### MVP ASAP
-
-- Build a Minimum Viable Product (MVP) as quickly as possible.
-  - Pick an API and explore it early on to ensure it will work for your need
-
-### Instructor Guidance
-
-You should strive to solve problems independently, but you also shouldn't waste
-your time stuck on a problem. A good guideline for a small bug is the rule of
-10s:
-
-- 10 minutes debugging the code
-- 10 minutes using Google and StackOverflow to try to find an answer
-- 10 minutes asking your fellow students for help
-- Asking an instructor
-
-If you seek out instructor guidance on your design from the start, they might
-help steer you into design and architectural decisions that will help you down
-the road. That will also give the instructors context for what your app is
-supposed to do, so you won't need to explain everything to them when asking for
-help debugging.
-
-### Guidelines for Staying Organized
-
-**Write down** the decisions you make about your project. This will not only
-help you think more clearly, it will also help you communicate your project to
-instructors when asking for help. In addition to writing everything down, we
-also recommend the following to help stay organized and on track:
-
-- Describe/sketch your ideas (use diagrams!).
-- Start by creating a frontend directory with the basic files you'll need
-- Next, build enough code to get some API data to work with. Don't worry about
-  building all of your async code yet, just get to the point where you can
-  access one endpoint on an API, then start working on getting that data
-  displayed.
-- Then, continue to build additional async code and frontend features.
-- Continue building features one by one.
-
-Check in with your instructors to make sure your scope and timeline are
-manageable.
-
-### JSON Server Instructions
-
-> **Note**: Using `json-server` is a stretch goal, so make sure you have a
-> working MVP before trying to set up `json-server`!
-
-You can use this [json-server template][] to generate your backend code. Using
-this template will make it easier to deploy your backend later on.
-
-[json-server template]: https://github.com/learn-co-curriculum/json-server-template
-
-If you prefer, instead of using the template, you can create a `db.json` file
-with a structure in the root of your project that looks like this:
-
-```json
-{
-  "toys": [
-    {
-      "id": 1,
-      "name": "Woody",
-      "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-      "likes": 8
-    },
-    {
-      "id": 2,
-      "name": "Buzz Lightyear",
-      "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-      "likes": 14
-    }
-  ]
-}
-```
-
-Then, assuming you have `json-server` installed globally, you can run this
-command to run the server:
-
-```console
-$ json-server --watch db.json
-```
-
-Whatever top-level keys exist in your `db.json` file will determine the routes
-available. In the example above, since we have a key of `toys` pointing to an
-array of toy objects, `json-server` will generate the following routes:
-
-- `GET /toys`
-- `POST /toys`
-- `GET /toys/:id`
-- `PATCH /toys/:id`
-- `DELETE /toys/:id`
-
-You can consult the [json-server docs][] for more information.
-
-[json-server docs]: https://www.npmjs.com/package/json-server
-
-## Resources
-
-- [Public APIs](https://github.com/public-apis/public-apis)
-- [Fun APIs](https://apilist.fun/)
-- [json-server][]
-
-[json-server]: https://www.npmjs.com/package/json-server
+This project is licensed under the MIT License.
