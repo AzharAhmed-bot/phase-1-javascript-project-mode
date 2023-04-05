@@ -17,7 +17,7 @@
       "superhero": "X-Men",
       "description": "The X-Men take on the Brood and their new queen, but at what cost?",
       "price": 4.99,
-      "available": 8,
+      "available": 7,
       "comments": "I love it"
     },
     {
@@ -27,8 +27,8 @@
       "superhero": "Black Panther",
       "description": "The epic conclusion to Ta-Nehisi Coates' run on Black Panther!",
       "price": 5.99,
-      "available": 7,
-      "comments": []
+      "available": 8,
+      "comments": "Awesome Comic Book"
     },
     {
       "id": 4,
@@ -52,12 +52,12 @@
     },
     {
       "id": 6,
-      "title": "Iron Man",
-      "image": "https://thewaltdisneycompany.com/app/uploads/2015/11/Marvel-Cover-2014_0.jpg",
+      "title": "Iron Man: The Extremis",
+      "image": "https://cdn.marvel.com/content/1x/invim2022001_cover.jpg",
       "superhero": "Iron Man",
-      "description": "Tony Stark's new armor is put to the test against a dangerous new foe!",
-      "price": 4.99,
-      "available": 2,
+      "description": " The series tells the story of a new version of the Extremis virus, which grants superhuman abilities to those who take it. Tony Stark, the alter ego of Iron Man, must confront a new threat while dealing with the effects of the virus on his own body.",
+      "price": 12.99,
+      "available": 5,
       "comments": []
     },
     {
@@ -97,7 +97,7 @@
       "superhero": "Batman",
       "description": "The Joker tries to prove that anyone can be driven insane like he was, with Batman and Commissioner Gordon caught in the crossfire!",
       "price": 10,
-      "available": 17,
+      "available": 13,
       "comments": []
     },
     {

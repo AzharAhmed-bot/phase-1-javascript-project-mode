@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded',()=>{
-    function fetchToDisplay(){
+   
 fetch('http://localhost:3000/comics')
   .then(response => response.json()) // parse the JSON data
   .then(data => {
@@ -14,21 +14,21 @@ fetch('http://localhost:3000/comics')
       card.innerHTML = `
         <img src="${comic.image}" class="card-img-top">
         <div class="card-body">
-          <h5 class="card-title">${comic.title}</h5>
           <p class="card-text">${comic.description}</p>
+          <h5 class="card-title">${comic.title}</h5>
           <p class="card-text">Superhero: ${comic.superhero}</p>
           <p class="card-text">Price: ${comic.price}</p>
-          <p class="card-text"  id="available-books">Available: ${comic.available} books </p>
+          <p class="card-text">Available: ${comic.available} books </p>
         </div>
       `;
       container.appendChild(card); // add the card to the container
    
     });
 })
-    }
-fetchToDisplay()
+    
 
-function searchToDisplay(){
+
+
  const connectionForm=document.querySelector("#connectionForm")
  const input = document.querySelector('#form-groups');
  const display = document.querySelector('#display-submit');
@@ -53,16 +53,13 @@ function searchToDisplay(){
               <img src="${filtering.image}" alt="${filtering.superhero}" />
               <p>${filtering.description}</p>
               <p>Price: $${filtering.price}</p>
-              <p>Available: ${filtering.available} books</p>
+              <p id="lets-test">Available: ${filtering.available} books</p>
            <form id=getting-comment> <input id="comment" type="text" placeholder="leave a comment for us about the book"${filtering.comment}/>
              <input id="submit-comment" type="submit" value="leave comment"/> 
              <form/>
             <button id="buying">Buy Now</button>
             </div>
           `;
-
-        
-
       // Adding event listener for the buy button below//
      //-----------------------------------------------------------------------------------------------------------------------------//
      const buyingButton=document.querySelector("#buying")
@@ -79,6 +76,8 @@ function searchToDisplay(){
           })
          .then(resp=>{resp.json()})
          .then(data=>{
+          document.querySelector("#lets-test").textContent=`Available: ${newAvailable} books`
+          //document.querySelector(".card-texts").textContent=`Available: ${newAvailable} books`
              alert("Book successfully bought Thank you!")
          })
 
@@ -92,9 +91,7 @@ function searchToDisplay(){
           })
          .then(resp=>{resp.json()})
          .then(data=>{
-            alert("Book Out of Stock!")
-            const availableElem = document.querySelector("available-books")
-            availableElem.textContent = `${newAvailable} books`;
+            alert("Book Out of Stock!")   
          })
         }
      })
@@ -102,9 +99,25 @@ function searchToDisplay(){
       
       
 
-                  //Adding event listener for the buy button//
+                  //Adding event listener for the submit button//
           //----------------------------------------------------------------------------------------------------------------------------//
-          
+          const gettingComments=document.querySelector('#getting-comment');
+          gettingComments.addEventListener("submit",(e)=>{
+            e.preventDefault();
+            const commentito=document.querySelector("#comment");
+            const result= commentito.value
+            console.log(result)
+            fetch(`http://localhost:3000/comics/${filtering.id}`,{
+              method:"PATCH",
+              headers:{
+                'Content-type':'application/json'
+              },
+              body:JSON.stringify({comments:result})
+            })
+            .then(resp=> resp.json())
+            .then(data=>console.log(data));
+            gettingComments.reset()
+          })
          //--------------------------------------------------------------------------------------------------------------------------//   
 
       
@@ -119,8 +132,6 @@ function searchToDisplay(){
      }); 
     })
   
-}
-searchToDisplay()
   
 
     
