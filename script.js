@@ -25,10 +25,6 @@ fetch('http://localhost:3000/comics')
    
     });
 })
-    
-
-
-
  const connectionForm=document.querySelector("#connectionForm")
  const input = document.querySelector('#form-groups');
  const display = document.querySelector('#display-submit');
@@ -60,7 +56,8 @@ fetch('http://localhost:3000/comics')
             <button id="buying">Buy Now</button>
             </div>
           `;
-      // Adding event listener for the buy button below//
+       
+                                 // Adding event listener for the buy button below//
      //-----------------------------------------------------------------------------------------------------------------------------//
      const buyingButton=document.querySelector("#buying")
      buyingButton.addEventListener('click',(e)=>{
@@ -99,7 +96,7 @@ fetch('http://localhost:3000/comics')
       
       
 
-                  //Adding event listener for the submit button//
+                                     //Adding event listener for the submit button//
           //----------------------------------------------------------------------------------------------------------------------------//
           const gettingComments=document.querySelector('#getting-comment');
           gettingComments.addEventListener("submit",(e)=>{
@@ -121,9 +118,6 @@ fetch('http://localhost:3000/comics')
             gettingComments.reset()
           })
          //--------------------------------------------------------------------------------------------------------------------------//   
-
-      
-        
         input.value=''
         } else {
           display.innerHTML = '<h1 id="error">Comic not found.</h1>';
@@ -133,13 +127,6 @@ fetch('http://localhost:3000/comics')
         alert("Oops! wrong information")
      }); 
     })
-  
-  
-
-    
-
-
-
 });
 
     
