@@ -17,8 +17,8 @@
       "superhero": "X-Men",
       "description": "The X-Men take on the Brood and their new queen, but at what cost?",
       "price": 4.99,
-      "available": 10,
-      "comments": ""
+      "available": 8,
+      "comments": "I love it"
     },
     {
       "id": 3,
@@ -27,8 +27,8 @@
       "superhero": "Black Panther",
       "description": "The epic conclusion to Ta-Nehisi Coates' run on Black Panther!",
       "price": 5.99,
-      "available": 8,
-      "comments": "Awesome Comic Book"
+      "available": 7,
+      "comments": []
     },
     {
       "id": 4,
@@ -47,8 +47,8 @@
       "superhero": "Captain America",
       "description": "Cap faces a new enemy who seeks to rewrite history!",
       "price": 3.99,
-      "available": 5,
-      "comments": "Awesome Comic Book"
+      "available": 12,
+      "comments": "I love it"
     },
     {
       "id": 6,
@@ -97,7 +97,7 @@
       "superhero": "Batman",
       "description": "The Joker tries to prove that anyone can be driven insane like he was, with Batman and Commissioner Gordon caught in the crossfire!",
       "price": 10,
-      "available": 23,
+      "available": 17,
       "comments": []
     },
     {

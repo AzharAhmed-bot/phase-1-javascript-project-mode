@@ -70,7 +70,7 @@ a:active {
    height: 30px;
 }
 #comics-container{
- background-color: black;
+ background-image:url('https://assets1.ignimgs.com/2019/03/14/avengers-endgame-ver2-poster-button-1552573654882.jpg');
  display: grid;
 grid-template-columns: repeat(3,2fr);
 gap: 20px;
@@ -125,7 +125,7 @@ gap: 20px;
     
   }
 #display-submit{
-    background-color: white;
+    background-image: url('https://c8.alamy.com/comp/2HY4F15/marvel-1000-piece-impossible-puzzle-2HY4F15.jpg');
 }
 .comic {
     width: 18rem;

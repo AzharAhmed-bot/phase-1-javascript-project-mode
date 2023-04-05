@@ -18,7 +18,7 @@ fetch('http://localhost:3000/comics')
           <p class="card-text">${comic.description}</p>
           <p class="card-text">Superhero: ${comic.superhero}</p>
           <p class="card-text">Price: ${comic.price}</p>
-          <p class="card-text">Available: ${comic.available} books </p>
+          <p class="card-text"  id="available-books">Available: ${comic.available} books </p>
         </div>
       `;
       container.appendChild(card); // add the card to the container
@@ -60,43 +60,63 @@ function searchToDisplay(){
             <button id="buying">Buy Now</button>
             </div>
           `;
-            const buyingButton=document.querySelector("#buying")
-            buyingButton.addEventListener('click',()=>{
-                console.log("clicked")
-            })
 
+        
 
-
+      // Adding event listener for the buy button below//
      //-----------------------------------------------------------------------------------------------------------------------------//
-          const commentito=document.querySelector("#comment")
-           const submitCmnt=document.querySelector("#getting-comment")
-        submitCmnt.addEventListener('submit',(e)=>{
-            e.preventDefault();
-            let feedBack=commentito.value;
-            
-          console.log(feedBack)
+     const buyingButton=document.querySelector("#buying")
+     buyingButton.addEventListener('click',(e)=>{
+        e.preventDefault();
+        if(filtering.available>0){
+         var newAvailable = filtering.available--;
           fetch(`http://localhost:3000/comics/${filtering.id}`,{
-        method:'PATCH',
-        headers:{
-            'Content-type':'application/json'
-        },
-        body:JSON.stringify({comments : feedBack})
-    })
-    .then(resp=>{resp.json()})
-    .then(data=>{
-         alert("Comment Updated")
-    })
-    
-commentito.value=''
-        })
-          input.value=''
+             method:"PATCH",
+             headers:{
+                 "Content-Type":"application/json"
+             },
+             body:JSON.stringify({available : newAvailable})
+          })
+         .then(resp=>{resp.json()})
+         .then(data=>{
+             alert("Book successfully bought Thank you!")
+         })
+
+        }
+        else if(filtering.available<=0){
+            fetch(`http://localhost:3000/comics/${filtering.id}`,{
+             method:"DELETE",
+             headers:{
+                 "Content-Type":"application/json"
+             }
+          })
+         .then(resp=>{resp.json()})
+         .then(data=>{
+            alert("Book Out of Stock!")
+            const availableElem = document.querySelector("available-books")
+            availableElem.textContent = `${newAvailable} books`;
+         })
+        }
+     })
+      //---------------------------------------------------------------------------------------------------------------//  
+      
+      
+
+                  //Adding event listener for the buy button//
+          //----------------------------------------------------------------------------------------------------------------------------//
+          
+         //--------------------------------------------------------------------------------------------------------------------------//   
+
+      
+        
+        input.value=''
         } else {
           display.innerHTML = '<h1 id="error">Comic not found.</h1>';
         }
       })
-     // .catch((error) => {
-       // alert("Oops! wrong information")
-     //}); 
+     .catch((error) => {
+        alert("Oops! wrong information")
+     }); 
     })
   
 }
