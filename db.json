@@ -1,36 +1,6 @@
 {
   "comics": [
     {
-      "id": 1,
-      "title": "The Amazing Spider-Man",
-      "image": "https://cdn.marvel.com/u/prod/marvel/i/mg/7/30/6259cb878dd80/clean.jpg",
-      "superhero": "Spider-Man",
-      "description": "Spidey's life gets even more complicated as he deals with J. Jonah Jameson's new podcast, a new Sinister Six, and the return of an old foe!",
-      "price": 3.99,
-      "available": 12,
-      "comments": []
-    },
-    {
-      "id": 2,
-      "title": "X-Men",
-      "image": "https://www.syfy.com/sites/syfy/files/styles/blog-post-embedded--tablet-1_5x/public/2022/03/xmen92_cover.jpg",
-      "superhero": "X-Men",
-      "description": "The X-Men take on the Brood and their new queen, but at what cost?",
-      "price": 4.99,
-      "available": 7,
-      "comments": "I love it"
-    },
-    {
-      "id": 3,
-      "title": "Black Panther",
-      "image": "https://cdn.marvel.com/u/prod/marvel/i/mg/9/50/5c3fa04e953e3/clean.jpg",
-      "superhero": "Black Panther",
-      "description": "The epic conclusion to Ta-Nehisi Coates' run on Black Panther!",
-      "price": 5.99,
-      "available": 7,
-      "comments": "Awesome Comic Book"
-    },
-    {
       "id": 4,
       "title": "The Mighty Thor ",
       "image": "https://upload.wikimedia.org/wikipedia/en/thumb/1/17/Thor_by_Olivier_Coipel.png/220px-Thor_by_Olivier_Coipel.png",
@@ -38,7 +8,8 @@
       "description": "The final battle between Thor and the Mangog!",
       "price": 3.99,
       "available": 7,
-      "comments": []
+      "comments": [],
+      "offers": []
     },
     {
       "id": 5,
@@ -48,17 +19,8 @@
       "description": "Cap faces a new enemy who seeks to rewrite history!",
       "price": 3.99,
       "available": 11,
-      "comments": "I love it"
-    },
-    {
-      "id": 6,
-      "title": "Iron Man: The Extremis",
-      "image": "https://cdn.marvel.com/content/1x/invim2022001_cover.jpg",
-      "superhero": "Iron Man",
-      "description": " The series tells the story of a new version of the Extremis virus, which grants superhuman abilities to those who take it. Tony Stark, the alter ego of Iron Man, must confront a new threat while dealing with the effects of the virus on his own body.",
-      "price": 12.99,
-      "available": 5,
-      "comments": []
+      "comments": [],
+      "offers": []
     },
     {
       "id": 7,
@@ -68,7 +30,8 @@
       "description": "A new team of Avengers is formed to take on a deadly threat!",
       "price": 3.99,
       "available": 16,
-      "comments": []
+      "comments": [],
+      "offers": []
     },
     {
       "id": 8,
@@ -78,7 +41,8 @@
       "description": "The first appearance of Wolverine as he goes up against the Incredible Hulk!",
       "price": 8.99,
       "available": 10,
-      "comments": []
+      "comments": [],
+      "offers": []
     },
     {
       "id": 9,
@@ -88,7 +52,8 @@
       "description": "The first appearance of Superman as he takes on corrupt politicians and criminals in Metropolis!",
       "price": 5.99,
       "available": 20,
-      "comments": []
+      "comments": [],
+      "offers": []
     },
     {
       "id": 10,
@@ -98,7 +63,8 @@
       "description": "The Joker tries to prove that anyone can be driven insane like he was, with Batman and Commissioner Gordon caught in the crossfire!",
       "price": 10,
       "available": 13,
-      "comments": []
+      "comments": "Awesome Comic Book",
+      "offers": []
     },
     {
       "id": 11,
@@ -108,7 +74,8 @@
       "description": "Deadpool travels to different dimensions to collect the pieces of a powerful weapon, but he's not the only one after it.",
       "price": 14.99,
       "available": 14,
-      "comments": []
+      "comments": [],
+      "offers": []
     },
     {
       "id": 12,
@@ -118,7 +85,142 @@
       "description": "Johnny Blaze (aka Ghost Rider) makes a deal with the devil to save his mentor's soul, but he must pay the price by collecting escaped demons.",
       "price": 12.99,
       "available": 11,
-      "comments": []
+      "comments": [],
+      "offers": []
+    },
+    {
+      "id": 13,
+      "title": "Wonder Woman: The True Amazon",
+      "image": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781683837916/dc-comics-wonder-woman-the-complete-covers-vol-3-9781683837916_hr.jpg",
+      "superhero": "Wonder Woman",
+      "description": "This graphic novel retells the origin story of Wonder Woman, exploring her Amazonian heritage and the challenges she faced on her path to becoming a hero.",
+      "price": 19.99,
+      "available": 12,
+      "comments": [],
+      "offers": []
+    },
+    {
+      "id": 14,
+      "title": "Ms. Marvel: No Normal",
+      "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/hostedimages/1483575803i/21627017.jpg",
+      "superhero": "Ms. Marvel",
+      "description": "Kamala Khan, a teenage girl from New Jersey, discovers she has the power to shapeshift and embarks on a journey of self-discovery and heroism.",
+      "price": 14.99,
+      "available": 10,
+      "comments": [],
+      "offers": []
+    },
+    {
+      "id": 15,
+      "title": "Saga: Volume 1",
+      "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1486028947i/15704307.jpg",
+      "superhero": "Saga eclipse",
+      "description": "This space opera follows two lovers from warring alien races as they fight to keep their family together and survive in a universe filled with danger.",
+      "price": 9.99,
+      "available": 23,
+      "comments": [],
+      "offers": []
+    },
+    {
+      "id": 16,
+      "title": "Watchmen",
+      "image": "https://ronellwhitaker.files.wordpress.com/2014/09/jul088045.jpg",
+      "superhero": "The Legito",
+      "description": "In an alternate version of 1985, a group of retired superheroes investigate the murder of one of their own and uncover a conspiracy that threatens the world.",
+      "price": 24.99,
+      "available": 17,
+      "comments": [],
+      "offers": []
+    },
+    {
+      "id": 17,
+      "title": "The Sandman: Preludes and Nocturnes",
+      "image": "https://upload.wikimedia.org/wikipedia/en/8/85/Sandman_no.1_%28Modern_Age%29.comiccover.jpg",
+      "superhero": "The Sandman",
+      "description": "Dream, the lord of dreams, is imprisoned for 70 years and must recover his lost artifacts to regain his power and seek revenge against his captors.",
+      "price": 12.99,
+      "available": 18,
+      "comments": [],
+      "offers": []
+    },
+    {
+      "id": 18,
+      "title": "Hellboy: Seed of Destruction",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/a/ad/Hellboy_SoD_TPB_cover.jpg/220px-Hellboy_SoD_TPB_cover.jpg",
+      "superhero": "Hellboy",
+      "description": "A demon baby rescued by the Allies during World War II grows up to become a paranormal investigator, battling supernatural threats and unraveling his own mysterious origins.",
+      "price": 16.99,
+      "available": 16,
+      "comments": [],
+      "offers": []
+    },
+    {
+      "id": 19,
+      "title": "The Mighty Avengers",
+      "image": "https://upload.wikimedia.org/wikipedia/en/2/21/Mighty_Avengers.jpg",
+      "superhero": "Avengers",
+      "description": "When Earth is threatened by powerful villains, the Avengers assemble to save the day. Join Iron Man, Thor, Hulk, Black Widow, and other heroes in this action-packed adventure.",
+      "price": 12.99,
+      "available": 21,
+      "comments": [],
+      "offers": []
+    },
+    {
+      "id": 20,
+      "title": "Green Lantern: Rebirth",
+      "image": "https://d1466nnw0ex81e.cloudfront.net/n_iv/600/4367346.jpg",
+      "superhero": "Green Lantern",
+      "description": "Hal Jordan is back as the Green Lantern, but can he overcome his past mistakes and redeem himself as a hero? Find out in this thrilling comic book series.",
+      "price": 9.99,
+      "available": 19,
+      "comments": [],
+      "offers": []
+    },
+    {
+      "id": 23,
+      "title": "The Flash: Rebirth",
+      "image": "https://d1466nnw0ex81e.cloudfront.net/n_iv/600/1323717.jpg",
+      "superhero": "The Flash",
+      "description": "Barry Allen is back as The Flash, but his world has changed. Can he regain his powers and restore the timeline to its rightful place? Follow his journey in this exciting comic book.",
+      "price": 11.99,
+      "available": 10,
+      "comments": [],
+      "offers": []
+    },
+    {
+      "id": 24,
+      "title": "Guardians of the Galaxy: Cosmic Avengers",
+      "image": "https://cdn.marvel.com/u/prod/marvel/i/mg/3/50/53e5137d433a8/background.jpg",
+      "superhero": "Guardians of the Galaxy",
+      "description": "When the fate of the universe is at stake, the Guardians of the Galaxy step up to save it. Join Star-Lord, Gamora, Drax, Rocket, and Groot in this epic adventure.",
+      "price": 13.99,
+      "available": 11,
+      "comments": [],
+      "offers": []
+    },
+    {
+      "id": 26,
+      "title": "FlashPoint Beyond ",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7w6w_64vUBCqsX27QCrYB_f-8Z0bGxk0ajA&usqp=CAU",
+      "superhero": "Dark Flash",
+      "description": "On the eve of Aquaman's sinking of London, Batman infiltrates his stronghold and goes on the warpath for answers. Nothing matters to Batman, whose world is already dead, but if he can track down the Clockwork Killer, Thomas can save his son's world and put everything back together again.",
+      "price": 50.99,
+      "available": 5,
+      "comments": [],
+      "offers": []
+      
+    },
+    {
+      "id": 27,
+      "title": "Agatha Coven of CHAOS",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7w6w_64vUBCqsX27QCrYB_f-8Z0bGxk0ajA&usqp=CAU",
+      "superhero": "Dark Flash",
+      "description": "On the eve of Aquaman's sinking of London, Batman infiltrates his stronghold and goes on the warpath for answers. Nothing matters to Batman, whose world is already dead, but if he can track down the Clockwork Killer, Thomas can save his son's world and put everything back together again.",
+      "price": "60.0",
+      "available": "3",
+      "comments": [],
+      "offers":[]
+      
     }
   ]
 }

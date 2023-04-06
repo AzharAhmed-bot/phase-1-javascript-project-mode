@@ -14,17 +14,24 @@ fetch('http://localhost:3000/comics')
       card.innerHTML = `
         <img src="${comic.image}" class="card-img-top">
         <div class="card-body">
+        <h5 class="card-title">Title: ${comic.title}</h5>
           <p class="card-text">${comic.description}</p>
-          <h5 class="card-title">${comic.title}</h5>
           <p class="card-text">Superhero: ${comic.superhero}</p>
-          <p class="card-text">Price: ${comic.price}</p>
+          <p class="card-texti">Price: ${comic.price}</p>
           <p class="card-text">Available: ${comic.available} books </p>
+          <p class="card-text">Comments: ${comic.comments} </p><br />
+          <p class="card-texto">Offers: ${comic.offers} </p>
         </div>
       `;
-      container.appendChild(card); // add the card to the container
-   
-    });
-})
+    
+        container.appendChild(card); // add the card to the container
+      })
+      const editButton=document.createElement("button")
+     container.appendChild(editButton)
+     
+  
+    })  
+
  const connectionForm=document.querySelector("#connectionForm")
  const input = document.querySelector('#form-groups');
  const display = document.querySelector('#display-submit');
@@ -48,7 +55,7 @@ fetch('http://localhost:3000/comics')
               <h2>${filtering.title}</h2>
               <img src="${filtering.image}" alt="${filtering.superhero}" />
               <p>${filtering.description}</p>
-              <p>Price: $${filtering.price}</p>
+              <p id="newOfferPlaced">Price: $${filtering.price}</p>
               <p id="lets-test">Available: ${filtering.available} books</p>
            <form id=getting-comment> <input id="comment" type="text" placeholder="leave a comment for us about the book"${filtering.comment}/>
              <input id="submit-comment" type="submit" value="leave comment"/> 
@@ -103,7 +110,7 @@ fetch('http://localhost:3000/comics')
             e.preventDefault();
             const commentito=document.querySelector("#comment");
             const result= commentito.value
-            console.log(result)
+            //console.log(result)
             fetch(`http://localhost:3000/comics/${filtering.id}`,{
               method:"PATCH",
               headers:{
@@ -113,20 +120,61 @@ fetch('http://localhost:3000/comics')
             })
             .then(resp=> resp.json())
             .then(data=>{
-              alert("Feed back succcesfully received!")
-              console.log(data)});
+              alert("Feedback succcesfully received!")
+              console.log(data)
+
+            });
             gettingComments.reset()
           })
          //--------------------------------------------------------------------------------------------------------------------------//   
         input.value=''
         } else {
-          display.innerHTML = '<h1 id="error">Comic not found.</h1>';
+          display.innerHTML = '<h1 id="error">Book Not in Stock But will be Available Soon</h1>';
         }
       })
      .catch((error) => {
         alert("Oops! wrong information")
      }); 
     })
-});
 
+
+                         //Adding submit Event for the put request for the Admin//
+    //------------------------------------------------------------------------------------------------------//
+  const updating=document.querySelector("#updating")
+  const urls=document.querySelector("#url")
+  const titles=document.querySelector("#title")
+  const superheros=document.querySelector("#superhero")
+  const descriptions=document.querySelector("#Description")
+  const prices=document.querySelector("#price")
+  const availables=document.querySelector("#available")
+  //const offer=document.querySelector("#offer").value;
+  
+  updating.addEventListener("submit",(e)=>{
+    e.preventDefault()
+   fetch("http://localhost:3000/comics",{
+    method:"POST",
+    headers:{
+      "Content-type":"application/json"
+    },
+    body:JSON.stringify({
+     title: titles.value,
+     image: urls.value,
+     superhero: superheros.value,
+     description: descriptions.value,
+     price: prices.value,
+     available: availables.value,
+     comments:[]
+    })
+   })
+   .then(resp=>{resp.json()})
+   .then(data=>{console.log(data)})
+ updating.reset()
+});
+  //--------------------------------------------------------------------------------------------------------------------//
+
+
+
+
+
+});
     
