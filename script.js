@@ -25,9 +25,29 @@ fetch('http://localhost:3000/comics')
       `;
     
         container.appendChild(card); // add the card to the container
+        const editButton=document.createElement("button")
+      editButton.textContent="Update"
+     card.appendChild(editButton)
+     editButton.addEventListener("click",()=>{
+      //console.log("clicked")
+      const newPrice=prompt("Enter New Price: ",comic.price)
+      const newOffer=prompt("Enter New Offer: ",comic.offers)
+      fetch(`http://localhost:3000/comics/${comic.id}`,{
+        method:"PATCH",
+        headers:{
+          "Content-type":"application/json"
+        },
+        body:JSON.stringify({
+          price: newPrice,
+          offers:newOffer
+        })
       })
-      const editButton=document.createElement("button")
-     container.appendChild(editButton)
+      .then(resp=>resp.json())
+      .then(data=>console.log(data))
+     })
+      })
+
+      
      
   
     })  
@@ -157,13 +177,15 @@ fetch('http://localhost:3000/comics')
       "Content-type":"application/json"
     },
     body:JSON.stringify({
+
      title: titles.value,
      image: urls.value,
      superhero: superheros.value,
      description: descriptions.value,
      price: prices.value,
      available: availables.value,
-     comments:[]
+     comments:[],
+     offers:[]
     })
    })
    .then(resp=>{resp.json()})
