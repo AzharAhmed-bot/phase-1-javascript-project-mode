@@ -65,7 +65,8 @@ fetch('http://localhost:3000/comics')
     fetch('http://localhost:3000/comics')
     .then((response) => response.json())
     .then((data) => {
-        let filtering=data.find((comic) => comic.title === title)
+        //let filtering=data.find((comic) => comic.title === title)
+        let filtering=data.find((comic) => comic.title.toLowerCase() === title)
        //console.log(filtering)
         if (filtering) {
             //console.log(data)
@@ -149,7 +150,7 @@ fetch('http://localhost:3000/comics')
          //--------------------------------------------------------------------------------------------------------------------------//   
         input.value=''
         } else {
-          display.innerHTML = '<h1 id="error">Book Not in Stock But will be Available Soon</h1>';
+          display.innerHTML = '<h1 id="error">Book Not in Stock But will be Available Soon 🙂</h1>';
         }
       })
      .catch((error) => {
